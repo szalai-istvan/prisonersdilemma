@@ -2,11 +2,11 @@
 
 This project's idea came after watching Veritasium's video on the topic: https://youtu.be/mScpHTIi-kM?si=MrPZC6TQCur8EtfO
 
-In The Prisoner's dilemma two players are competing in a number of rounds. Each round, each player chooses between being cooperative or hostile, and then they get some points. The scoring is as follows:
-cooperative-cooperative: 3-3 points
-hostile-hostile: 1-1 points
-cooperative-hostile: 0-5 points
-hostile-cooperative: 5-0 points
+In The Prisoner's dilemma two players are competing in a number of rounds. Each round, each player chooses between being cooperative or hostile without knowing the other player's choice, and then they get some points. The scoring is as follows:
+- cooperative-cooperative: 3-3 points
+- hostile-hostile: 1-1 points
+- cooperative-hostile: 0-5 points
+- hostile-cooperative: 5-0 points
 
 In 1980 Robert Axelrod conducted an experiment where game theorists submitted programs playing the game with different strategies. At that experiment they concluded that an eye-for-eye approach works best, at which we start as cooperative, and every round we mimic the last choice of our opponent. We only act hostile, if we have been treated hostile in the previous round. 
 What I would like to figure out is whether we can come up with an approach beating eye-for-eye. 
