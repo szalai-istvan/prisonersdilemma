@@ -21,7 +21,7 @@ Two strategies have already been added. One that chooses randomly every time, to
 from strategies.strategybaseclass import Strategy
 from game.choices import cooperative, hostile
 
-class EyeForEyeStrategy(Strategy):
+class name_of_your_class(Strategy):
     def name(self):
         return the name you have given toyour strategy.
 
