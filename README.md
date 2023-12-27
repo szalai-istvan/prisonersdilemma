@@ -2,7 +2,7 @@
 
 This project's idea came after watching Veritasium's video on the topic: https://youtu.be/mScpHTIi-kM?si=MrPZC6TQCur8EtfO
 
-In The Prisoner's dilemma two players are competing in a number of rounds. Each round, each player chooses between being cooperative or hostile without knowing the other player's choice, and then they get some points. The scoring is as follows:
+In The Prisoner's dilemma two players are competing in a number of rounds. Each round, each player chooses between being cooperative or hostile without knowing the other player's choice, and then they get some points. The scoring goes as follows:
 - cooperative-cooperative: 3-3 points
 - hostile-hostile: 1-1 points
 - cooperative-hostile: 0-5 points
@@ -14,7 +14,7 @@ The Python program in this repository when executed will contest every strategy 
 
 When making a decision a strategy has access to all its and all its opponent's previous choices. From the length of the choice arrays the current round's number can be deducted, but the total number of rounds is unknown to the player. Every game's length is random between 150 and 250. 
 
-To submit a new strategy, create a new .py file in the ./strategies directory, and create a class which extends strategy. Below is a template that can be used as a skeleton for new strategy classes. 
+To submit a new strategy, create a new .py file in the ./strategies directory, and create a class which extends strategies.strategybaseclass.Strategy. Below is a template that can be used for creating new strategy classes. 
 Two strategies have already been added. One that chooses randomly every time, to serve as an origin. We expect a well made strategy to perform better than the random selector. The other is the 1980 winner eye-for-eye strategy, so we can compare our ones to it. 
 
 ```
