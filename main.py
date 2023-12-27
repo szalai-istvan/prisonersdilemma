@@ -14,7 +14,6 @@ def playAllMatches(strategies):
                         player2(gamedata))
             game.play()
             games.append(game)
-            print(game.getWinner().description())
 
 strategies = allStrategies()
 playAllMatches(strategies)
