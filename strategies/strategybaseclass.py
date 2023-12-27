@@ -11,7 +11,10 @@ class Strategy:
         return self
 
     def description(self):
-        return f'{self.name()} as player {self.player}'
+        return f'{self.nameAndAuthor()} as player {self.player}'
+
+    def nameAndAuthor(self):
+        return f'{self.name()} (by {self.author()})'
 
     def name(self):
         raise Exception('Name unspecified')

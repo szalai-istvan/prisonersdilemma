@@ -1,10 +1,11 @@
 from game.game import Game
 from game.gamedata import GameData
+from game.scores import Scores
 from strategies.strategybaseclass import allStrategies
 
-games = []
-
 def playAllMatches(strategies):
+    games = []
+    scores = Scores()
     for player1 in strategies:
         for player2 in strategies:
             gamedata = GameData()
@@ -13,7 +14,12 @@ def playAllMatches(strategies):
                         player1(gamedata),
                         player2(gamedata))
             game.play()
+
             games.append(game)
+            scores.append(nameAndAuthor=game.player1.nameAndAuthor(), score=gamedata.player1Score)
+            scores.append(nameAndAuthor=game.player2.nameAndAuthor(), score=gamedata.player2Score)
+    return games, scores
 
 strategies = allStrategies()
-playAllMatches(strategies)
+games, scores = playAllMatches(strategies)
+
