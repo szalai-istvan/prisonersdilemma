@@ -34,8 +34,8 @@ class Game:
     def csvdata(self):
         firstrow = [self.player1.description()]
         secondrow = [self.player2.description()]
-        [firstrow.append(choice) for choice in self.gamedata.getChoices(1)]
-        [secondrow.append(choice) for choice in self.gamedata.getChoices(2)]
         firstrow.append(self.gamedata.player1Score)
         secondrow.append(self.gamedata.player2Score)
+        [firstrow.append(choice) for choice in self.gamedata.getChoices(1)]
+        [secondrow.append(choice) for choice in self.gamedata.getChoices(2)]
         return firstrow,secondrow

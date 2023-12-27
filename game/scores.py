@@ -20,5 +20,5 @@ class Scores:
         sortedByValue = sorted(averageScores, key=lambda x: x[1])[::-1]
         rows = []
         for value in sortedByValue:
-            rows.append([value[0], value[1]])
+            rows.append([value, averageScores[value]])
         return rows
