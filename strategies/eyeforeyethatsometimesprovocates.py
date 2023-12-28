@@ -2,7 +2,7 @@ from strategies.strategybaseclass import Strategy
 from game.choices import cooperative, hostile
 from random import random
 
-class EyeForEyeStrategy(Strategy):
+class SometimesProvocativeEyeForEyeStrategy(Strategy):
     def name(self):
         return 'Eye for eye, but provocative'
 
