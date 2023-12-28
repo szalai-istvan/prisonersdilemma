@@ -25,8 +25,6 @@ class Game:
             self.winner = player1
         elif winner == 2:
             self.winner = player2
-        else:
-            print('Draw')
 
     def getWinner(self):
         return self.winner

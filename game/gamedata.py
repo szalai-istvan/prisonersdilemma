@@ -18,9 +18,9 @@ class GameData:
 
     def getChoices(self, player):
         if player == 1:
-            return self.player1Choices
+            return [x for x in self.player1Choices]
         elif player == 2:
-            return self.player2Choices
+            return [x for x in self.player2Choices]
         raise Exception(f'Unexpected player number: {player}. ')
 
     def evaluateRound(self):
