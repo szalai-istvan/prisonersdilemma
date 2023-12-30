@@ -21,7 +21,7 @@ class Scores:
         player1Score = results[0][1]
         player2NameAndAuthor = results[1][0]
         player2Score = results[1][1]
-        winner = None
+
         if player1Score > player2Score:
             winner = player1NameAndAuthor
         elif player2Score > player1Score:
@@ -29,7 +29,7 @@ class Scores:
         else:
             return
 
-        if not winner in self.numberOfWins:
+        if winner not in self.numberOfWins:
             self.numberOfWins[winner] = 1
         else:
             self.numberOfWins[winner] = self.numberOfWins[winner] + 1
